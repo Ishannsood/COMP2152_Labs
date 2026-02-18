@@ -25,15 +25,15 @@ def fib(n):
     Returns:
         int: The nth Fibonacci number
     """
-    # TODO: Base case 1 - If n equals 0, return 0
+    # Base case 1 - If n equals 0, return 0
     if n == 0:
         return 0
 
-    # TODO: Base case 2 - If n equals 1, return 1
+    # Base case 2 - If n equals 1, return 1
     if n == 1:
         return 1
 
-    # TODO: Recursive case - Return fib(n-1) + fib(n-2)
+    #  Recursive case - Return fib(n-1) + fib(n-2)
     return fib(n-1) + fib(n-2)
 
 
@@ -76,24 +76,24 @@ def fizz_buzz(n):
     """
     result = []
 
-    # TODO: Loop from 1 to n (inclusive)
+    # Loop from 1 to n (inclusive)
     for i in range(1, n+1):
     # Hint: Use range(1, n + 1)
 
-        # TODO: Check if divisible by BOTH 3 and 5 FIRST
+        # Check if divisible by BOTH 3 and 5 FIRST
         # Hint: if i % 3 == 0 and i % 5 == 0
         if i % 3 == 0 and i % 5 == 0:
             result.append("FizzBuzz")
 
-        # TODO: Then check if divisible by 3 only
+        #  Then check if divisible by 3 only
         elif i % 3 == 0:
             result.append("Fizz")
 
-        # TODO: Then check if divisible by 5 only
+        #  Then check if divisible by 5 only
         elif i % 5 == 0:
             result.append("Buzz")
 
-        # TODO: Otherwise, append the number as a string
+        # Otherwise, append the number as a string
         else:
             result.append(str(i))
 
@@ -143,13 +143,13 @@ def binary_search_iterative(nums, target):
     Returns:
         int: Index of target, or -1 if not found
     """
-    # TODO: Initialize left pointer to 0
+    # Initialize left pointer to 0
     left = 0
 
-    # TODO: Initialize right pointer to len(nums) - 1
+    #  Initialize right pointer to len(nums) - 1
     right = len(nums) - 1
 
-    # TODO: While left <= right:
+    #  While left <= right:
     while left <= right:
         mid = (left + right) // 2
         if nums[mid] == target:
